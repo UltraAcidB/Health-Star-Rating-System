@@ -3,7 +3,7 @@ class HSR_food:
         self,
         name,
         category,
-        energy,
+        calories,
         saturated_fat,
         total_sugars,
         sodium,
@@ -14,7 +14,7 @@ class HSR_food:
         ):
         self.name = name
         self.category = category
-        self.energy = energy
+        self.energy = calories * 4.184
         self.saturated_fat = saturated_fat
         self.total_sugars = total_sugars
         self.sodium = sodium

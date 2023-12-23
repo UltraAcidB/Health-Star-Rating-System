@@ -12,22 +12,22 @@ food_keyword_dict={
     'Pancake': ['pancake', 'bánh pancake'],
     'Cheesecake': ['cheesecake', 'bánh cheesecake'],
     'Garlic bread': ['garlic bread', 'bánh mì bơ tỏi'],
-    # 'Cha gio':['chả giò', 'fried spring rolls'],
-    # 'Fried rice':['cơm chiên', 'fried rice'],
-    # 'Roasted duck':['vịt quay', 'roasted duck'],
-    # 'Sushi':['sushi', '寿司'],
-    # 'French fries':['khoai tây chiên', 'homemade french fries'],
-    # 'Hamburger':['hamburger', 'bánh mì hamburger'],
-    # 'Spaghetti':['mì spaghetti','spaghetti'],
-    # 'Chicken curry':['cà ri gà', 'chicken curry'],
-    # 'Bbq chicken wings':['bbq chicken wings', 'cánh gà nướng bbq'],
-    # 'Pizza':['pizza', 'bánh pizza'],
-    # 'Burrito':['burrito', 'bánh burrito'],
-    # 'Donut':['donut', 'bánh donut'],
-    # 'Sandwich':['sandwich', 'bánh sandwich kep'],
-    # 'Ramen':['ramen', '拉麺'],
-    # 'Omelette':['omelette', 'オムレツ'],
-    # 'Pad thai':['pad thai', 'mì xào kiểu thái']
+    'Cha gio':['chả giò', 'fried spring rolls'],
+    'Fried rice':['cơm chiên', 'fried rice'],
+    'Roasted duck':['vịt quay', 'roasted duck'],
+    'Sushi':['sushi', '寿司'],
+    'French fries':['khoai tây chiên', 'homemade french fries'],
+    'Hamburger':['hamburger', 'bánh mì hamburger'],
+    'Spaghetti':['mì spaghetti','spaghetti'],
+    'Chicken curry':['cà ri gà', 'chicken curry'],
+    'Bbq chicken wings':['bbq chicken wings', 'cánh gà nướng bbq'],
+    'Pizza':['pizza', 'bánh pizza'],
+    'Burrito':['burrito', 'bánh burrito'],
+    'Donut':['donut', 'bánh donut'],
+    'Sandwich':['sandwich', 'bánh sandwich kep'],
+    'Ramen':['ramen', '拉麺'],
+    'Omelette':['omelette', 'オムレツ'],
+    'Pad thai':['pad thai', 'mì xào kiểu thái']
 }
 
 urls_path = 'D:/Projects/HealthStarRating/Food-data/Urls/'
@@ -116,7 +116,7 @@ def download_image_from_urls(items, urls_path, download_path):
             try:
                 image_name = f'{item_name}_{i}.JPG'
                 image_path = folder_path + '/' + image_name
-                url_content = requests.get(url,timeout=60).content
+                url_content = requests.get(url, timeout = 60).content
                 url_file = io.BytesIO(url_content)
                 image = Image.open(url_file)
                 with open(image_path, 'wb') as f:

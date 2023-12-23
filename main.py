@@ -1,71 +1,74 @@
 import hsr_calculator
 import hsr_food 
+import image_predictor
 
-item1 = hsr_food.HSR_food(
-    name="Camembert cheese",
-    category="3D",
-    energy=1750,
-    saturated_fat=22.5,
-    total_sugars=0.5,
-    sodium=652,
-    concentrated_fnvl=0,
-    fnvl=0,
-    fibre=0,
-    protein=16.4,
-)
-
-item2 = hsr_food.HSR_food(
-    name="Instant chicken soup",
+item_1 = hsr_food.HSR_food(
+    name="Banh cuon",
     category="2",
-    energy=65,
-    saturated_fat=0.1,
-    total_sugars=0.5,
-    sodium=290,
+    calories = 118*4.184,
+    saturated_fat = 1.2,
+    total_sugars = 1.2,
+    sodium = 720,
+    concentrated_fnvl = 0,
+    fnvl = 0,
+    fibre = 0.6,
+    protein = 3,
+)
+
+item_2 = hsr_food.HSR_food(
+    name = "Banh mi",
+    category = "2",
+    calories = 180*4.184,
+    saturated_fat = 1.9,
+    total_sugars = 1.7,
+    sodium = 239,
+    concentrated_fnvl = 0,
+    fnvl = 20,
+    fibre = 0.8,
+    protein = 15,
+)
+
+item_3 = hsr_food.HSR_food(
+    name = "Fried rice",
+    category = "2",
+    calories = 174*4.184,
+    saturated_fat = 0.5,
+    total_sugars = 0.6,
+    sodium = 387,
     concentrated_fnvl=0,
     fnvl=0,
-    fibre=0.5,
-    protein=0.3,
+    fibre = 1.1,
+    protein = 4.1,
 )
 
-item3 = hsr_food.HSR_food(
-    name="Fruit and nut muesli bar",
-    category="2",
-    energy=1735,
-    saturated_fat=4.5,
-    total_sugars=36.4,
-    sodium=30,
-    concentrated_fnvl=27,
-    fnvl=43,
-    fibre=5.0,
-    protein=12.5,
+item_4 = hsr_food.HSR_food(
+    name = "Com tam",
+    category = "2",
+    calories = 178*4.184,
+    saturated_fat = 2.1,
+    total_sugars = 0.1,
+    sodium = 135,
+    concentrated_fnvl = 0,
+    fnvl = 0,
+    fibre = 0,
+    protein= 11.7,
 )
 
-item4 = hsr_food.HSR_food(
-    name="Orange juice",
-    category="1",
-    energy=188.28,
-    saturated_fat=0.2,
-    total_sugars=8.4,
-    sodium=1,
-    concentrated_fnvl=100,
-    fnvl=0,
-    fibre=0.2,
-    protein=0.7,
-)
-
-item5 = hsr_food.HSR_food(
-    name="Milk",
-    category="1D",
-    energy=209,
-    saturated_fat=1.3,
-    total_sugars=5.1,
-    sodium=47,
+item_5 = hsr_food.HSR_food(
+    name = "Omelette",
+    category = "2",
+    calories = 181*4.184,
+    saturated_fat = 3.3,
+    total_sugars = 0.4,
+    sodium = 350,
     concentrated_fnvl=0,
-    fnvl=0,
-    fibre=0,
-    protein=3.3,
+    fnvl = 0,
+    fibre = 0.4,
+    protein = 12,
 )
-
-grocery_list = [item1, item2, item3, item4, item5]
+PATH = "D:/Projects/HealthStarRating/test-image.jpg"
+grocery_list = [item_1, item_2, item_3, item_4, item_5]
+pred_item = image_predictor.predict_image(PATH)
 for item in grocery_list:
-    hsr_calculator.get_health_star_rating(item)
+    if pred_item == item.name:
+        hsr_calculator.get_health_star_rating(item)

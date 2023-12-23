@@ -480,7 +480,7 @@ def get_food_data(food_category_dict, save_path):
     'FNVL (%)':[],
     }
     options=webdriver.FirefoxOptions()
-    #options.add_argument('--headless')
+    options.add_argument('--headless')
     driver = webdriver.Firefox(options=options)
     for category in food_category_dict.keys():
         for food in food_category_dict[category]:
@@ -519,10 +519,10 @@ def get_health_star_rating(save_path, heath_rated_save_path):
     df = pd.read_csv(csv_path)
     health_stars = []
     for i in df.index:
-        energy=(df['Calories (kcal)'][i])*4.184
+        calories=(df['Calories (kcal)'][i])
         item=hsr_food.HSR_food(name = df['Name'][i], 
                        category = df['Category'][i], 
-                       energy = energy, 
+                       calories = calories, 
                        saturated_fat = df['Saturated fat (g)'][i], 
                        total_sugars = df['Sugars (g)'][i], 
                        sodium = df['Sodium (mg)'][i],
