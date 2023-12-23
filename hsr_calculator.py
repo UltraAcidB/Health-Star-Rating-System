@@ -113,7 +113,7 @@ def get_baseline_points(food):
     for nutrient in ("energy", "saturated_fat", "total_sugars", "sodium"):
         pt = lookup_table(food.get_nutrient(nutrient), "<=", ">", tab, "points", nutrient)
         total += pt
-        # print(f"Baseline {nutrient} points:", pt)
+        print(f"Baseline {nutrient} points:", pt)
     return total
 
 
@@ -122,7 +122,7 @@ def get_baseline_points_category_1(food):
     for nutrient in ("energy", "total_sugars"):
         pt = lookup_table(food.get_nutrient(nutrient), "<=", ">", baseline_points_table_C, "points", nutrient,)
         total += pt
-        # print(f"Baseline {nutrient} points:", pt)
+        print(f"Baseline {nutrient} points:", pt)
     return total
 
 
@@ -183,25 +183,25 @@ def get_profiler_score(food):
         fibre_points = get_HSR_F_points(food)
     profiler_score = baseline_points - fnvl_points - protein_points - fibre_points
 
-    # print(
-    #     "Total baseline points:",
-    #     baseline_points,
-    #     "\n" "Modifying fnvl points:",
-    #     fnvl_points,
-    #     "\n" "Modifying protein points:",
-    #     protein_points,
-    #     "\n" "Modifying fibre points:",
-    #     fibre_points,
-    #     "\n" f"Final score of {food.name}:",
-    #     profiler_score
-    # )
+    print(
+        "Total baseline points:",
+        baseline_points,
+        "\n" "Modifying fnvl points:",
+        fnvl_points,
+        "\n" "Modifying protein points:",
+        protein_points,
+        "\n" "Modifying fibre points:",
+        fibre_points,
+        "\n" f"Final score of {food.name}:",
+        profiler_score
+    )
     return profiler_score
 
 
 def get_health_star_rating(food):
     sc = get_profiler_score(food)
-    # health_star = "\U0001F60E"
-    # star = "\U00002B50"
+    health_star = "\U0001F60E"
+    star = "\U00002B50"
     if food.category == "1":
         if food.name == "Water":
             health_star = 5.0
@@ -222,12 +222,12 @@ def get_health_star_rating(food):
         health_star = lookup_table(sc, "<=", ">=", health_star_rating_table, "rating", "category 3")
     elif food.category == "3D":
         health_star = lookup_table(sc, "<=", ">=", health_star_rating_table, "rating", "category 3D")
-    # print(
-    #     f"Health Star Rating of {food.name}:",
-    #     health_star,
-    #     star,
-    #     "\n-------------------------------------------------------------------------------",
-    # )
+    print(
+        f"Health Star Rating of {food.name}:",
+        health_star,
+        star,
+        "\n-------------------------------------------------------------------------------",
+    )
     return health_star
 
 

@@ -53,20 +53,16 @@ def preprocess_image(image_path):
     img = np.expand_dims(img, axis = 0)
     return img
 
-
-def get_probabilities(outputs):
-    probs = pd.Series(np.round(outputs * 100, 2), classes)
-    probs = probs.sort_values(ascending = False).reset_index()
-    probs.columns = ['Class', 'Probability']
-    print(probs)
-
-
 def predict_image(image_path):
     img = preprocess_image(image_path)
     model = load_model(MODEL_PATH)
     pred_probs = model.predict(img)[0]
     index = np.argmax(pred_probs)
+    probability = np.max(pred_probs)*100
     label = classes[index]
-    print(f'=========== Predicted Class: {label} ===========')
-    get_probabilities(pred_probs)
+    print(f'|=========== Predicted Class: {label} ===========|')
+    print(f'|=========== Probability: {probability} ==========|')
     return label
+
+if __name__ == "__main__":
+    pass
