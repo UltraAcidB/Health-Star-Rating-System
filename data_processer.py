@@ -42,7 +42,7 @@ folders = [
     'Garlic bread',
 ]
 
-images_path = 'D:/Images/'
+images_path = 'D:/Backup/Images/'
 dataset_path = 'D:/Projects/HealthStarRating/Food-data/Images/'
 
 
@@ -131,4 +131,4 @@ def find_similar_images(folders, images_path, different_points):
 # find_similar_images(folders, images_path, 5)
 # filter_images(folders, images_path, 15)
 # rename_images(folders, images_path)
-# splitfolders.ratio(input = images_path, output = dataset_path, seed = 1337, ratio = (.8, .1, .1,), group_prefix= None, move = False)
+splitfolders.ratio(input = images_path, output = dataset_path, seed = 1337, ratio = (.8, .1, .1,), group_prefix= None, move = False)

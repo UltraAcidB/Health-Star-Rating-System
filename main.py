@@ -66,9 +66,10 @@ item_5 = hsr_food.HSR_food(
     fibre = 0.4,
     protein = 12,
 )
-PATH = "D:/Projects/HealthStarRating/test-image.jpg"
+PATH = "D:/Projects/HealthStarRating/test-image-1.jpg"
 grocery_list = [item_1, item_2, item_3, item_4, item_5]
 pred_item = image_predictor.predict_image(PATH)
 for item in grocery_list:
     if pred_item == item.name:
         hsr_calculator.get_health_star_rating(item)
+

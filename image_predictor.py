@@ -57,8 +57,8 @@ def predict_image(image_path):
     img = preprocess_image(image_path)
     model = load_model(MODEL_PATH)
     pred_probs = model.predict(img)[0]
-    index = np.argmax(pred_probs)
     probability = np.max(pred_probs)*100
+    index = np.argmax(pred_probs)
     label = classes[index]
     print(f'|=========== Predicted Class: {label} ===========|')
     print(f'|=========== Probability: {probability} ==========|')
