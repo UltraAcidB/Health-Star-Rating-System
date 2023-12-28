@@ -1,4 +1,4 @@
-rr,Calories (kcal),Total fat (g),Saturated fat (g),Cholesterol (mg),Sodium (mg),Total carbohydrate (g),Dietary fiber (g),Sugars (g),Protein (g),Vitamin D (mcg),Calcium (mg),Iron (mg),Potassium (mg),Category,Concentrated fruit and vegetable (%),FNVL (%),Health Star Rating,Image url
+Name,Calories (kcal),Total fat (g),Saturated fat (g),Cholesterol (mg),Sodium (mg),Total carbohydrate (g),Dietary fiber (g),Sugars (g),Protein (g),Vitamin D (mcg),Calcium (mg),Iron (mg),Potassium (mg),Category,Concentrated fruit and vegetable (%),FNVL (%),Health Star Rating,Image url
 Orange juice,45,0.2,0,0,1,10,0.2,8.4,0.7,0,11,0.2,200,1,100,0,3,https://salimaskitchen.com/wp-content/uploads/2022/01/Fresh-Squeezed-Orange-Juice-Salimas-Kitchen-20.jpg
 Tomato juice,17,0.3,0,0,253,3.5,0.4,2.6,0.9,0,10,0.4,217,1,100,0,4,https://www.simplyrecipes.com/thmb/z95Tx3jzQkPNc_i1MlDHmy2pI-Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2008__08__homemade-tomato-juice-horiz-a-1200-c37b5128f0f248999446fc460f8afb96.jpg
 Grape juice,60,0.1,0,0,5,15,0.2,14,0.4,0,11,0.3,104,1,100,0,1.5,https://www.simplyrecipes.com/thmb/lfzVGYwhjKcLfFDJSef9CgpBXJs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Homemade-Grape-Juice-LEAD-3-708f317f8fe94c91a039b5867e48662e.jpg
@@ -61,7 +61,7 @@ Pineapple smoothie,86,1.1,0.6,3.9,27,18,1.2,11,2.2,0.5,68,0.2,251.4,1D,0,60,3.5,
 Cappuccino,42,1.6,1,6.4,40,4.2,0,4,2.6,1,96,0,134.8,1D,0,0,4.5,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/1200px-Cappuccino_at_Sightglass_Coffee.jpg
 Goi du du,51,1.1,0.2,0,287,10,1.7,7.1,1.2,0,22,0.3,202.8,2,0,100,4,https://www.cet.edu.vn/wp-content/uploads/2019/07/goi-du-du-chua-ngot.jpg
 Salad,24,0.2,0,0,37,5,2,2.2,1.5,0,44,1,283.8,2,0,100,4.5,https://www.eatingwell.com/thmb/rmLlvSjdnJCCy_7iqqj3x7XS72c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chopped-power-salad-with-chicken-0ad93f1931524a679c0f8854d74e6e57.jpg
-Lecttuce salad,24,0.2,0,0,37,5,2,2.2,1.5,0,44,1,283.8,2,0,100,4.5,https://insimoneskitchen.com/wp-content/uploads/2014/06/Lettuce-and-cucumber-salad-07.jpg
+Lettuce salad,24,0.2,0,0,37,5,2,2.2,1.5,0,44,1,283.8,2,0,100,4.5,https://insimoneskitchen.com/wp-content/uploads/2014/06/Lettuce-and-cucumber-salad-07.jpg
 Spinach salad,158,12,4.4,75,291,3.7,1.1,1.6,8,0.6,46,1.4,337.8,2,0,100,4,"https://hips.hearstapps.com/hmg-prod/images/spinachsaladhorizontal-jpg-1592245758.jpg?crop=0.636xw:0.952xh;0.0689xw,0.0481xh&resize=1200:*"
 Beet salad,231,20,4.1,7.1,223,9.4,1.8,6.9,4.3,0.1,59,1,241,2,0,100,3.5,https://www.happyfoodstube.com/wp-content/uploads/2019/11/beet-salad-with-feta-image.jpg
 Greek salad,113,9.4,3.5,16,233,4.7,1,2.6,3.2,0.1,105,0.6,150.3,2,0,100,4,https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2018/08/Greek-Salad-6-1.jpg
