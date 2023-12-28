@@ -157,7 +157,7 @@ food_keyword_list = [
     'Bbq buffalo wings',
     'Bbq honey wings',
     'Burrito',
-    'Burrito beef',
+    'Bean burrito',
     'Steak burrito',
     'Chicken burrito',
     'Donut',
@@ -245,7 +245,7 @@ food_keyword_list = [
     'Salmon tartare',
     'Beignet',
     'Bibimbap',
-    'Beef bibimbap',
+    'Dim sum',
     'Tofu bibimbap',
     'Chicken bibimbap',
     'Ceviche',
@@ -447,8 +447,8 @@ food_keyword_list = [
     'Banh gio',
 ]
 
-image_url_dict={'name':[],
-                'image url':[]}
+image_url_dict={'Name':[],
+                'Image url':[]}
 
 save_path = 'D:/Projects/HealthStarRating/Food-data/Urls/'
 images_path = 'D:/Images/'
@@ -574,4 +574,4 @@ def get_food_image_url(keyword_list):
             
 # get_google_image_urls(food_keyword_dict, urls_path, 400)
 # download_image_from_urls(food_keyword_dict, urls_path, images_path)
-get_food_image_url(food_keyword_list)
+# get_food_image_url(food_keyword_list)

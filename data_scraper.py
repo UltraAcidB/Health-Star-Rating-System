@@ -235,7 +235,7 @@ food_category_dict={
                 'Miso soup',
                 'Imitation crab',
                 'Ham',
-                'Pad thai',
+                'Beef jerky',
                 'Pork chop',
                 'Prime rib',
                 'Tofu',
@@ -540,3 +540,4 @@ def get_health_star_rating(save_path, heath_rated_save_path):
 
 # get_food_data(food_category_dict, save_path)
 get_health_star_rating(save_path, health_rated_save_path)
+
